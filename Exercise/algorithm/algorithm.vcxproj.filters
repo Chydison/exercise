@@ -7,10 +7,16 @@
     <Filter Include="1.LargestSumContiguousSubarray">
       <UniqueIdentifier>{12a556eb-8e5d-4253-a492-6621abfa74a1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2.MaximumSumRectangleInA2DMatrix">
+      <UniqueIdentifier>{386e1a8f-b653-4401-9658-1e7d2b9e652e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.LargestSumContiguousSubarray\LargestSumContiguousSubarray.h">
       <Filter>1.LargestSumContiguousSubarray</Filter>
+    </ClInclude>
+    <ClInclude Include="2.MaximumSumRectangleInA2DMatrix\MaximumSumRectangleInA2DMatrix.h">
+      <Filter>2.MaximumSumRectangleInA2DMatrix</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

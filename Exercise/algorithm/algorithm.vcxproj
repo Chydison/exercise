@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.LargestSumContiguousSubarray\LargestSumContiguousSubarray.h" />
+    <ClInclude Include="2.MaximumSumRectangleInA2DMatrix\MaximumSumRectangleInA2DMatrix.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
