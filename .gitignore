@@ -2,7 +2,9 @@
 # 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
 ################################################################################
 
-/Exercise/.vs
 /.vs
+/Exercise/.vs
 /Exercise/Debug/
 /Exercise/algorithm/Debug/
+/Exercise/x64/Debug/
+/Exercise/algorithm/x64/Debug/
