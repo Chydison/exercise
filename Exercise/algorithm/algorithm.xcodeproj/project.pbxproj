@@ -26,6 +26,7 @@
 		3D824D452568C86E0046BD2D /* mian.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mian.cpp; sourceTree = "<group>"; };
 		3D824D4B2568C8C10046BD2D /* LargestSumContiguousSubarray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LargestSumContiguousSubarray.h; sourceTree = "<group>"; };
 		3D824D4D2568C8C10046BD2D /* MaximumSumRectangleInA2DMatrix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaximumSumRectangleInA2DMatrix.h; sourceTree = "<group>"; };
+		3D824D5A2568D6250046BD2D /* RedPacket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedPacket.h; sourceTree = "<group>"; };
 		3DCBFF7A2568C81600B19744 /* algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -56,11 +57,20 @@
 			path = 2.MaximumSumRectangleInA2DMatrix;
 			sourceTree = "<group>";
 		};
+		3D824D4F2568D3CD0046BD2D /* 3.RedPacket */ = {
+			isa = PBXGroup;
+			children = (
+				3D824D5A2568D6250046BD2D /* RedPacket.h */,
+			);
+			path = 3.RedPacket;
+			sourceTree = "<group>";
+		};
 		3DCBFF712568C81600B19744 = {
 			isa = PBXGroup;
 			children = (
 				3D824D4A2568C8C10046BD2D /* 1.LargestSumContiguousSubarray */,
 				3D824D4C2568C8C10046BD2D /* 2.MaximumSumRectangleInA2DMatrix */,
+				3D824D4F2568D3CD0046BD2D /* 3.RedPacket */,
 				3D824D452568C86E0046BD2D /* mian.cpp */,
 				3DCBFF7B2568C81600B19744 /* Products */,
 			);
