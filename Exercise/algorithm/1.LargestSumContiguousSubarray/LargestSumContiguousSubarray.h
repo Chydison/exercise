@@ -37,5 +37,5 @@ void LargestSumContiguousSubarray()
     int a[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
     int n = sizeof(a) / sizeof(a[0]);
     int max_sum = maxSubArraySum(a, n);
-    cout << "1.LargestSumContiguousSubarray : Maximum contiguous sum is " << max_sum << "\n";
+    cout << "1.LargestSumContiguousSubarray : Maximum contiguous sum is " << max_sum << endl;
 }

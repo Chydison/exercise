@@ -8,10 +8,10 @@ https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/
 */
 #include<iostream> 
 
-using namespace std;s
+using namespace std;
 
 #define ROW 4
-#define COL 5s
+#define COL 5
 
 int calcSubMatrixSum(int M[][COL], int start_row, int start_col, int end_row, int end_col)
 {
@@ -23,7 +23,7 @@ int calcSubMatrixSum(int M[][COL], int start_row, int start_col, int end_row, in
             sum += M[j][i];
         }
     }
-//    cout << sum << "\n";
+//    cout << sum << endl;
     return sum;
 }
 
@@ -59,12 +59,12 @@ void sample(int M[][COL])
             }
         }
     }
-    cout << "sample : \n"
-        << "maxSum:" << maxSum << "\n"
-        << "sR:" << sR << "\n"
-        << "sC:" << sC << "\n"
-        << "eR:" << eR << "\n"
-        << "eC:" << eC << "\n";
+    cout << "sample : " << endl
+        << "maxSum:" << maxSum << endl
+        << "sR:" << sR << endl
+        << "sC:" << sC << endl
+        << "eR:" << eR << endl
+        << "eC:" << eC << endl;
 }
 
 /*
@@ -132,10 +132,10 @@ void findMaxSum_With_Kadane(int M[][COL])
 {
     // Variables to store the final output
     int maxSum = INT_MIN,
-        finalLeft,
-        finalRight,
-        finalTop,
-        finalBottom;
+        finalLeft = -1,
+        finalRight = -1,
+        finalTop = -1,
+        finalBottom = -1;
 
     int left, right, i;
     int temp[ROW], sum, start, finish;
@@ -177,21 +177,16 @@ void findMaxSum_With_Kadane(int M[][COL])
     }
 
     // Print final values
-    cout << "(Top, Left) ("
-        << finalTop << ", "
-        << finalLeft
-        << ")" << endl;
-    cout << "(Bottom, Right) ("
-        << finalBottom << ", "
-        << finalRight << ")" << endl;
+    cout << "(Top, Left) (" << finalTop << ", " << finalLeft << ")" << endl;
+    cout << "(Bottom, Right) (" << finalBottom << ", " << finalRight << ")" << endl;
     cout << "Max sum is: " << maxSum << endl;
 }
 
 
 void MaximumSumRectangleInA2DMatrix()
 {
-    cout << "2.MaximumSumRectangleInA2DMatrix : \n";
-
+    cout << "2.MaximumSumRectangleInA2DMatrix : " << endl;
+    
     int M[ROW][COL] = 
     {
         { 1,   2, -1, -4, -20 },

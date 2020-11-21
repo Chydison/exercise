@@ -7,11 +7,10 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello World\n" ;
+    cout << "Hello World" << endl;
 
     LargestSumContiguousSubarray();
     MaximumSumRectangleInA2DMatrix();
 
-    system("pause");
     return 0;
 }
