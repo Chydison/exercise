@@ -2,16 +2,16 @@
 /*
 https://www.geeksforgeeks.org/maximum-sum-rectangle-in-a-2d-matrix-dp-27/
 
-2Î¬¾ØÕóÖĞµÄºÍ×î´óµÄ×Ó¾ØÕó
+2ç»´çŸ©é˜µä¸­çš„å’Œæœ€å¤§çš„å­çŸ©é˜µ
 
 
 */
 #include<iostream> 
 
-using namespace std;
+using namespace std;s
 
 #define ROW 4
-#define COL 5
+#define COL 5s
 
 int calcSubMatrixSum(int M[][COL], int start_row, int start_col, int end_row, int end_col)
 {
@@ -28,8 +28,8 @@ int calcSubMatrixSum(int M[][COL], int start_row, int start_col, int end_row, in
 }
 
 /*
-    ¼òµ¥Ëã·¨£¬Ö±½Ó±éÀúÈ«²¿×Ó¾ØÕó£¬ÕÒµ½ºÍ×î´óµÄ
-    Ê±¼ä¸´ÔÓ¶ÈO(n^6)
+    ç®€å•ç®—æ³•ï¼Œç›´æ¥éå†å…¨éƒ¨å­çŸ©é˜µï¼Œæ‰¾åˆ°å’Œæœ€å¤§çš„
+    æ—¶é—´å¤æ‚åº¦O(n^6)
 */
 void sample(int M[][COL])
 {
@@ -68,9 +68,9 @@ void sample(int M[][COL])
 }
 
 /*
-    ½áºÏKadaneËã·¨
-    ÒÔÁĞÎª»ù´¡£¬²éÕÒµ±Ç°nÁĞÖĞµÄÁ¬ĞøĞĞÖĞºÍ×î´óµÄ×Ó¾ØÕó
-    Ê±¼ä¸´ÔÓ¶ÈO(n^3)
+    ç»“åˆKadaneç®—æ³•
+    ä»¥åˆ—ä¸ºåŸºç¡€ï¼ŒæŸ¥æ‰¾å½“å‰nåˆ—ä¸­çš„è¿ç»­è¡Œä¸­å’Œæœ€å¤§çš„å­çŸ©é˜µ
+    æ—¶é—´å¤æ‚åº¦O(n^3)
 */
 // Implementation of Kadane's algorithm for
 // 1D array. The function returns the maximum

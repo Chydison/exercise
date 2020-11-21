@@ -2,15 +2,15 @@
 /*
 https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
 
-����ܺ͵�����������
+最大总和的连续子数组
 
-Kadane�㷨�ļ�˼���ǲ�������������������Σ�Ϊ��ʹ��max_ending_here����
-�������������ֶ������������ֶΣ�Ϊ��ʹ��max_so_far����ÿ�����ǵõ�һ�������ܺ�ʱ��
-������max_so_far���бȽϣ����������max_so_far�������max_so_far
+Kadane算法的简单思想是查找数组的所有正连续段（为此使用max_ending_here）。
+并跟踪所有正分段中最大和连续分段（为此使用max_so_far）。每次我们得到一个正数总和时，
+将它与max_so_far进行比较，如果它大于max_so_far，则更新max_so_far
 
-Kadane�ǿ��ڻ�÷¡��ѧ�Ľ��ڣ�����㷨��Ϊ�˽����������еĺͣ�maximum subarray�������
+Kadane是卡内基梅隆大学的教授，这个算法是为了解决最大子序列的和（maximum subarray）提出的
 
-ʱ�临�Ӷ�0(n)
+时间复杂度0(n)
 */
 #include<iostream> 
 
