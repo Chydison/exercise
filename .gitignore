@@ -8,4 +8,6 @@
 /Exercise/algorithm/Debug/
 /Exercise/x64/Debug/
 /Exercise/algorithm/x64/Debug/
-/Exercise/Exercise.xcworkspace/xcuserdata
+Exercise/Exercise.xcworkspace/xcuserdata
+Exercise/ProjectTree/ProjectTree.xcodeproj/xcuserdata
+Exercise/ProjectTree/ProjectTree.xcodeproj/xcshareddata
