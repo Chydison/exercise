@@ -1,5 +1,6 @@
 |--Tools
 |  |--ProjectTree
+|--Script
 |--Exercise
 |  |--algorithm
 |  |  |--3.RedPacket

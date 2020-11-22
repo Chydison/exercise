@@ -65,10 +65,11 @@ int main(int argc, const char * argv[]) {
     printf("%s", outStr.c_str());
     
     string outPath = path+"/ProjectTree.txt";
-    std::ofstream osWrite(outPath, std::ofstream::app);
+    std::ofstream osWrite(outPath, std::ofstream::trunc);
     osWrite << outStr;
     osWrite << endl;
     osWrite.close();
+    printf("success export ProjectTree.txt to %s", outPath.c_str());
     
     return 0;
 }

@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		3DEFD6C2256A72E000922310 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DEFD6C1256A72E000922310 /* main.cpp */; };
+		3DEFD6C5256A799700922310 /* ProjectTree in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3DA48E38256A669E005975DF /* ProjectTree */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3DA48E36256A669E005975DF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
+			buildActionMask = 12;
+			dstPath = Users/songchunyu/Documents/SF/exercise/Tools/ProjectTree;
 			dstSubfolderSpec = 0;
 			files = (
+				3DEFD6C5256A799700922310 /* ProjectTree in CopyFiles */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
