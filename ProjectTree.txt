@@ -6,5 +6,7 @@
 |  |  |--3.RedPacket
 |  |  |--2.MaximumSumRectangleInA2DMatrix
 |  |  |--1.LargestSumContiguousSubarray
+|  |--SUtil
+|  |  |--SUtil
 |  |--ProjectTree
 
