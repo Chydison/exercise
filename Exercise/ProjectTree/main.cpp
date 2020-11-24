@@ -6,13 +6,54 @@
 //
 
 #include <iostream>
-#include <dirent.h>
 #include <fstream>
+
+
+#ifdef _WIN32
+#include <io.h>
+#else
+#include <dirent.h>
+#endif
 
 using namespace std;
 
 void genDirTree(const char * dir_path, string & out_string, int depth = 0)
 {
+#ifdef _WIN32
+    _finddata_t FileInfo;
+    string strfind = dir_path;
+    strfind += "\\*";
+    long Handle = _findfirst(strfind.c_str(), &FileInfo);
+    if (Handle == -1L)
+    {
+        cerr << "can not match the folder path : " << strfind << endl;
+        exit(-1);
+    }
+    do {
+        string name = FileInfo.name;
+        if (name.find_first_of(".") == 0
+            || (int)name.find(".xcworkspace") >= 0
+            || (int)name.find(".xcodeproj") >= 0
+            || name == "build"
+            || name == "bin"
+            )
+        {
+            continue;
+        }
+        //判断是否有子目录
+        if (FileInfo.attrib & _A_SUBDIR)
+        {
+            for (int i = 0; i < depth; ++i)
+                out_string += "|  ";
+            out_string += "|--" + name + "\n";
+            string path = dir_path;
+            path += "\\" + name;
+            genDirTree(path.c_str(), out_string, depth+1);
+        }
+    } while (_findnext(Handle, &FileInfo) == 0);
+
+    _findclose(Handle);
+#else
     DIR *pDir = NULL;
     if ((pDir = opendir(dir_path)) == NULL)
         printf("open dir failed : %s", dir_path);
@@ -38,6 +79,7 @@ void genDirTree(const char * dir_path, string & out_string, int depth = 0)
             genDirTree(path.c_str(), out_string, depth+1);
         }
     }
+#endif
 }
 
 int main(int argc, const char * argv[]) {
@@ -65,7 +107,7 @@ int main(int argc, const char * argv[]) {
     printf("%s", outStr.c_str());
     
     string outPath = path+"/ProjectTree.txt";
-    std::ofstream osWrite(outPath, std::ofstream::trunc);
+    ofstream osWrite(outPath, ofstream::trunc);
     osWrite << outStr;
     osWrite << endl;
     osWrite.close();

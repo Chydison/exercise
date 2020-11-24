@@ -62,7 +62,8 @@ void RedPacket()
     unsigned int seed = (unsigned int)(time(NULL));
     srand(seed);
     
-    wechat(10, 1.0 * 100);
+    // 10人分1元
+    wechat(10, 1 * 100);
 }
 
 #endif /* RedPacket_h */

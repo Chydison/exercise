@@ -4,10 +4,10 @@
 
 /.vs
 /Exercise/.vs
-/Exercise/Debug/
-/Exercise/algorithm/Debug/
-/Exercise/x64/Debug/
-/Exercise/algorithm/x64/Debug/
+/Exercise/build/
+/Exercise/ProjectTree/bin/
+/Exercise/SUtil/bin/
+/Exercise/algorithm/bin/
 Exercise/Exercise.xcworkspace/xcuserdata
 Exercise/ProjectTree/ProjectTree.xcodeproj/xcuserdata
 Exercise/ProjectTree/ProjectTree.xcodeproj/xcshareddata

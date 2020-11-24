@@ -1,6 +1,6 @@
 #include<iostream> 
 
-#include "SUtil/SUtil.h"
+#include "../SUtil/SUtil/SUtil.h"
 #include "1.LargestSumContiguousSubarray/LargestSumContiguousSubarray.h"
 #include "2.MaximumSumRectangleInA2DMatrix/MaximumSumRectangleInA2DMatrix.h"
 #include "3.RedPacket/RedPacket.h"
